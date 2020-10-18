@@ -4,11 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
+    <title>Password</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="script.js">
   </head>
   <body>
+
+  <!--Nav Bar -->  
+<nav>
+  <nav class="navbar navbar-light" style="background-color: lightgray;">
+    <a class="navbar-brand" href=#>Password Generator</a>
+  </nav>
+
+<!--Design-->
+<div class="container">
+  <div class="row">
+   
+    <div class="col-lg-8 col-sm-12"> 
+
+        <div class="content">
+        </div>
+      </div>
+
     <div class="wrapper">
+
+    <!-- Header-->
       <header>
         <h1>Password Generator</h1>
       </header>
@@ -16,6 +37,8 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+
+        <!--Password Box-->
         <div class="card-body">
           <textarea
             readonly
@@ -25,10 +48,15 @@
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
+          <br>
+          <div type="text" id="display"></div> 
+          <br>
+          <button id="generate">Generate Password</button>
       </div>
     </div>
+    
+    <!--- Java script page-->
     <script src="script.js"></script>
+</script>
   </body>
 </html>
