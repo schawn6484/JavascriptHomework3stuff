@@ -28,16 +28,46 @@ function generateOptions() {
 
     //prompt user for special character
     var hasSpecialCharacter = confirm("Click Ok if you want a special character.");
-    
+  
+    if(confirm("Click Ok if you want a special character.")){
+    }
+    else{
+        alert ('The password must contain at least one special character!');
+        return
+    }
+
     //prompt user for numeric character
     var hasNumeric = confirm("Click Ok if you want a number.");
-    
-    //prompt user for lowercase character
+
+    if (confirm("Click Ok if you want a number.")){
+    }
+    else{
+        alert ('The password must contain at least one number character!')
+        return
+    }
+
+     //prompt user for lowercase character
     var hasLowercase = confirm("Click Ok if you want a lowercase.");
+
+    if(confirm("Click Ok if you want a lowercase character.")){
+    }
+    else{
+        alert ('The password must contain at least one lowercase character!');
+        return
+    }
+    
     
     //prompt user for uppercase character
     var hasUppercase = confirm("Click Ok if you want an uppercase.");
-    
+
+    if(confirm("Click Ok if you want an uppercase character.")){
+    }
+    else{
+        alert ('The password must contain at least one uppercase character!');
+        return
+    }
+
+    //Password must contain at least one special, numeric, lowercase, and uppercase character
     if (!hasLowercase && !hasUppercase && !hasNumeric && !hasSpecialCharacter) {
         alert("Your password must contain at least one special, numeric, lowercase, or uppercase character");
         return
